@@ -184,6 +184,17 @@ body {
 .right_block ul li:hover {
   color: var(--secondary);
 }
+.achievements li {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  transition: color 0.3s;
+}
+
+.achievements li:hover {
+  color: var(--secondary);
+}
+
 
 a {
   color: var(--hover-blue);
@@ -258,3 +269,34 @@ a:hover {
     font-size: 1rem;
   }
 }
+
+
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .container {
+    box-shadow: none;
+    width: 100%;
+  }
+
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8rem;
+  }
+
+  .left_block, .right_block {
+    padding: 20px;
+  }
+
+  .imgg:hover {
+    transform: none;
+  }
+
+  .item:hover, .projects li:hover, .section ul li:hover {
+    color: black;
+  }
+}
+
