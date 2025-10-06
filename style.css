@@ -17,7 +17,7 @@
 }
 
 body {
-   font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #e0f2f7;
   display: flex;
   justify-content: center;
@@ -52,6 +52,23 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+
+.profile h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: var(--white);
+}
+
+.profile p span {
+  font-size: 1rem;
+  color: var(--light-blue);
+  font-weight: 300;
+  display: block;
+}
+
 .imgg {
   width: 150px;
   height: 150px;
@@ -73,6 +90,7 @@ body {
   object-fit: cover;
   margin-top: 3px;
 }
+
 
 .profile h2 {
   font-family: 'Montserrat', sans-serif;
@@ -96,11 +114,11 @@ body {
 }
 
 .section h3 {
-   font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 10px;
-  color: var(--white);
+  /* color: var(--white); */
   position: relative;
 }
 
@@ -136,12 +154,11 @@ body {
 }
 
 .right_block h2 {
-   font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 15px;
   color: var(--primary);
-  text-transform: uppercase;
   border-bottom: 2px solid #e0e0e0;
   padding-bottom: 5px;
 }
@@ -189,6 +206,7 @@ body {
 .right_block ul li:hover {
   color: var(--secondary);
 }
+
 .achievements li {
   font-size: 0.95rem;
   margin-bottom: 10px;
@@ -200,7 +218,6 @@ body {
   color: var(--secondary);
 }
 
-
 a {
   color: var(--hover-blue);
   text-decoration: none;
@@ -211,7 +228,6 @@ a:hover {
   color: var(--secondary);
   text-decoration: underline;
 }
-
 
 @keyframes fadeIn {
   from {
@@ -262,6 +278,10 @@ a:hover {
     height: 120px;
   }
 
+  .profile h1 {
+    font-size: 1.7rem;
+  }
+
   .profile h2 {
     font-size: 1.3rem;
   }
@@ -274,36 +294,5 @@ a:hover {
     font-size: 1rem;
   }
 }
-
-
-@media print {
-  body {
-    background: white;
-    color: black;
-  }
-
-  .container {
-    box-shadow: none;
-    width: 100%;
-  }
-
-  a::after {
-    content: " (" attr(href) ")";
-    font-size: 0.8rem;
-  }
-
-  .left_block, .right_block {
-    padding: 20px;
-  }
-
-  .imgg:hover {
-    transform: none;
-  }
-
-  .item:hover, .projects li:hover, .section ul li:hover {
-    color: black;
-  }
-}
-
 
 
