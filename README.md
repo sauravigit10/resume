@@ -6,7 +6,7 @@ Welcome to my Resume repository! This project contains my personal resume built 
 
 ## About Me
 
-I am a 4th-semester CSIT student at Nepathya College, passionate about frontend web development and eager to build user-friendly digital experiences. I enjoy working with modern tools like React.js, Tailwind CSS, and Git.
+I am a 5th-semester CSIT student at Nepathya College, passionate about frontend web development and eager to build user-friendly digital experiences. I enjoy working with modern tools like React.js, Tailwind CSS, and Git.
 
 ---
 
